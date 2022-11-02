@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import GithubContext from "../../context/github/GithubContext";
 
 function UserItem({ user: { login, avatar_url } }) {
   return (

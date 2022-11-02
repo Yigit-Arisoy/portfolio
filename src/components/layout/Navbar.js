@@ -2,18 +2,14 @@ import { FaGithub } from "react-icons/fa";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
-import React from "react";
-
-const handleTheme = (e) => {
-  if (document.documentElement.getAttribute("data-theme") == "forest") {
-    document.documentElement.setAttribute("data-theme", "cupcake");
-  } else {
-    document.documentElement.setAttribute("data-theme", "forest");
-  }
-};
+import React, { useContext } from "react";
+import GithubContext from "../../context/github/GithubContext";
 
 function Navbar() {
+  const { changeMode } = useContext(GithubContext);
+  const handleTheme = (e) => {
+    changeMode();
+  };
   return (
     /*<nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
       <div className="container mx-auto">
@@ -40,10 +36,13 @@ function Navbar() {
       </div>
     </nav>*/
 
-    <div className=" flex  px-2 pt-2 pb-2  justify-between bg-base-200">
+    <div className=" sticky z-10 top-0 flex  px-2 pt-2 pb-2  justify-between bg-base-300">
       <div className="flex-none items-center ml-2">
-        <FaGithub className="inline pr-2 text-4xl mx-2"></FaGithub>
-        <Link to="/" className="text-lg font-bold align-middle">
+        <FaGithub className="inline pr-2 text-4xl mx-2 text-primary-focus"></FaGithub>
+        <Link
+          to="/"
+          className="text-lg font-bold align-middle text-primary-focus"
+        >
           Github Search
         </Link>
       </div>
