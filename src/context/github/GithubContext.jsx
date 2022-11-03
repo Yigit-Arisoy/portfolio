@@ -1,5 +1,6 @@
 import { createContext, useReducer } from "react";
 import githubReducer from "./GithubReducer";
+import { useState } from "react";
 
 const GithubContext = createContext();
 
@@ -16,6 +17,7 @@ export const GithubProvider = ({ children }) => {
   };
 
   const [state, dispatch] = useReducer(githubReducer, initialStates);
+  const [navActive, setNavActive] = useState(false);
 
   const setLoading = () => {
     dispatch({ type: "SET_LOADING" });
@@ -80,7 +82,8 @@ export const GithubProvider = ({ children }) => {
         getUser,
         getRepos,
         changeMode,
-
+        navActive: navActive,
+        setNavActive,
         repos: state.repos,
         mode: state.mode,
       }}
