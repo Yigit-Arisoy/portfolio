@@ -28,7 +28,7 @@ function Introduction() {
         loop
         className="sm:hidden absolute top-[600px] left-0 z-0 opacity-50"
       ></video>
-      <div className="mt-48 h-[600px] sm:h-[75vh] mx-16">
+      <div className="mt-16 sm:mt-48 h-screen sm:pb-0 sm:h-[75vh] mx-16">
         <div className="text-left text-primary text-2xl mb-4">
           <Message message={"Hi! I am"} delay={0} />
         </div>
