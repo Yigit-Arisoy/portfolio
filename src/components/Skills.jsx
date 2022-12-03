@@ -9,7 +9,7 @@ function Skills() {
         <h1 className="text-5xl text-primary font-bold pt-24">Skills</h1>
         <div className="h-screen bg-base-100 sm:mx-16 md:mx-16 lg:mx-32 xl:mx-96 mt-16">
           <Zoom bottom cascade big>
-            <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-y-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-y-8">
               {/*  */}
               <div>
                 <Skill name={"javascript"} title={"Javascript"}></Skill>
