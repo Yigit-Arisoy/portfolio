@@ -1,37 +1,34 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
-import User from "./pages/User";
-import { GithubProvider } from "./context/github/GithubContext";
-import { AlertProvider } from "./context/Alert/AlertContext";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Introduction from "./components/Introduction";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Socials from "./components/Socials";
+import Fade from "react-reveal/Fade";
+
 function App() {
   return (
     <div className="App">
-      <GithubProvider>
-        <AlertProvider>
-          <Router>
-            <div className="">
-              <Navbar />
+      <div>
+        <Navbar />
+      </div>
+      <div className="lg:mx-96">
+        <Introduction />
+      </div>
 
-              <main>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path={`/users/:login`} element={<User />} />
-                </Routes>
-              </main>
+      <Fade left big>
+        <About />
+      </Fade>
 
-              <Footer></Footer>
-            </div>
-          </Router>
-        </AlertProvider>
-      </GithubProvider>
+      <Fade>
+        <Skills />
+      </Fade>
+
+      <div className="fixed bottom-16 left-8 z-20">
+        <Socials />
+      </div>
     </div>
   );
 }

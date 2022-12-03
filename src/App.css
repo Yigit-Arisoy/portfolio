@@ -18,11 +18,13 @@
   }
 }
 
-.pop:hover {
-  transform: translateY(-4px);
-  transition: all 0.15s ease-in-out;
+.hiddenElement {
+  opacity: 0;
+  filter: blur(5px);
 }
 
-.blurBg {
-  filter: blur(4px);
+.appearingElement {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 0.5s ease-out;
 }
