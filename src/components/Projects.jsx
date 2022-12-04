@@ -26,12 +26,6 @@ function Projects() {
           link={"https://www.youtube.com/watch?v=3whqq_4aRAw"}
           desc={"Project with Mcus / ML / Web dev"}
         ></Project>
-
-        <Project
-          picture={"Octocat.png"}
-          name="Github Search"
-          link={"https://yigitarisoy-githubsearch.netlify.app/"}
-        ></Project>
       </div>
     </div>
   );
