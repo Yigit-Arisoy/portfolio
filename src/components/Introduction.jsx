@@ -8,26 +8,9 @@ function Introduction() {
         src={require("../media/bgVideo.mp4")}
         autoPlay
         loop
-        className=" absolute top-0 left-0 z-0 opacity-50"
+        className=" hidden sm:block absolute top-0 left-0 z-0 opacity-50"
       ></video>
-      <video
-        src={require("../media/bgVideo.mp4")}
-        autoPlay
-        loop
-        className="sm:hidden absolute top-[200px] left-0 z-0 opacity-50"
-      ></video>
-      <video
-        src={require("../media/bgVideo.mp4")}
-        autoPlay
-        loop
-        className="sm:hidden absolute top-[400px] left-0 z-0 opacity-50"
-      ></video>
-      <video
-        src={require("../media/bgVideo.mp4")}
-        autoPlay
-        loop
-        className="sm:hidden absolute top-[600px] left-0 z-0 opacity-50"
-      ></video>
+
       <div className="mt-16 sm:mt-48 h-screen sm:pb-0 sm:h-[75vh] mx-16">
         <div className="text-left text-primary text-2xl mb-4">
           <Message message={"Hi! I am"} delay={0} />

@@ -10,7 +10,6 @@ function Navbar() {
           <div>About</div>
           <div>Experience</div>
           <div>Projects</div>
-          <div>Contact</div>
           <div>Resume</div>
         </div>
       </div>

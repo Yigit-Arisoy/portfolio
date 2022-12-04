@@ -7,7 +7,7 @@ function Skills() {
     <div>
       <div>
         <h1 className="text-5xl text-primary font-bold pt-24">Skills</h1>
-        <div className="sm:h-screen pb-16 sm:pb-0 bg-base-100 sm:mx-16 md:mx-16 lg:mx-32 xl:mx-96 mt-16">
+        <div className="sm:h-fit pb-16 sm:pb-64 bg-base-100 sm:mx-16 md:mx-16 lg:mx-32 xl:mx-96 mt-16">
           <Zoom bottom cascade big>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-y-8">
               {/*  */}

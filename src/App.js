@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import Socials from "./components/Socials";
 import Fade from "react-reveal/Fade";
 
@@ -24,6 +25,10 @@ function App() {
 
       <Fade>
         <Skills />
+      </Fade>
+
+      <Fade>
+        <Projects />
       </Fade>
 
       <div className="fixed bottom-16 left-8 z-20">

@@ -28,3 +28,32 @@
   filter: blur(0);
   transition: all 0.5s ease-out;
 }
+
+.projectContainer:hover > .projectCard {
+  transform: rotateY(180deg);
+}
+
+.projectCard {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+}
+
+.projectShadow {
+  box-shadow: 1px 1px 7px rgb(39, 192, 219), -1px -1px 7px rgb(39, 192, 219);
+}
+
+.projectFront {
+}
+
+.projectBack {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.projectFront,
+.projectBack {
+  backface-visibility: hidden;
+}
