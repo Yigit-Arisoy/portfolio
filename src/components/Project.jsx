@@ -9,20 +9,20 @@ function Project({ name, picture, link, desc }) {
             <img
               src={String(require(`../media/${picture}`))}
               alt=""
-              className="w-48 px-4"
+              className="w-36 sm:w-48 px-4"
             />
-            <p className="text-primary font-semibold pb-2 text-2xl mt-2">
+            <p className="text-primary font-semibold pb-2 text-lg sm:text-2xl mt-2">
               {name}
             </p>
           </a>
         </div>
-        <div className="projectBack bg-bgSecond text-primary font-semibold pb-2 pt-8 sm:pt-12">
+        <div className="projectBack bg-bgSecond text-primary font-semibold pb-2 pt-4 sm:pt-8 sm:pt-12">
           <a href={link} target="_blank" rel="noreferrer">
             <button className="btn btn-outline btn-primary">
               <a href={link}>Check it Out</a>
             </button>
 
-            <p className="mt-4 mx-2">{desc}</p>
+            <p className="mt-2 mx-2 text-sm">{desc}</p>
           </a>
         </div>
       </div>
