@@ -7,7 +7,7 @@ function Project({ name, picture, link, desc }) {
         <div className="projectFront">
           <a href={link} target="_blank" rel="noreferrer">
             <img
-              src={require(`../media/${picture}`)}
+              src={String(require(`../media/${picture}`))}
               alt=""
               className="w-48 px-4"
             />
