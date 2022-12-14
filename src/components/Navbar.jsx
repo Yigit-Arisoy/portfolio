@@ -3,7 +3,7 @@ import { FiMenu } from "react-icons/fi";
 
 function Navbar() {
   const handleMenu = () => {
-    document.querySelector("#mobileNav").classList.toggle("bottom-0");
+    document.querySelector("#mobileNav").classList.toggle("bottom-64");
     document.querySelector("#mobileNav").classList.toggle("opacity-0");
     document.querySelector("#mobileNav").classList.toggle("h-0");
   };
