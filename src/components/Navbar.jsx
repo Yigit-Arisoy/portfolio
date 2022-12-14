@@ -3,7 +3,14 @@ import { FiMenu } from "react-icons/fi";
 
 function Navbar() {
   const handleMenu = () => {
-    document.querySelector("#mobileNav").classList.toggle("bottom-64");
+    if (document.querySelector("#mobileNav").classList.contains("bottom-64")) {
+      document.querySelector("#mobileNav").classList.remove("bottom-64");
+      document.querySelector("#mobileNav").classList.add("bottom-0");
+    } else {
+      document.querySelector("#mobileNav").classList.remove("bottom-0");
+      document.querySelector("#mobileNav").classList.add("bottom-64");
+    }
+
     document.querySelector("#mobileNav").classList.toggle("opacity-0");
     document.querySelector("#mobileNav").classList.toggle("h-0");
   };
