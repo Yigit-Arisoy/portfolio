@@ -7,7 +7,6 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Socials from "./components/Socials";
-import Fade from "react-reveal/Fade";
 
 function App() {
   return (
@@ -19,21 +18,17 @@ function App() {
         <Introduction />
       </div>
 
-      <Fade left big>
-        <About />
-      </Fade>
+      <About />
 
-      <Fade>
-        <Skills />
-      </Fade>
+      <Skills id="skills" />
 
-      <Fade>
-        <Projects />
-      </Fade>
+      <Projects id="projects" />
 
       <div className="fixed bottom-16 left-8 z-20">
         <Socials />
       </div>
+
+      <p className="text-primary">Yiğit Arısoy &copy; 2022</p>
     </div>
   );
 }
