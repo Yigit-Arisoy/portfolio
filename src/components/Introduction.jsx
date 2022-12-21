@@ -18,7 +18,7 @@ function Introduction() {
         <div className="text-left text-primary text-6xl  font-bold mb-3">
           <Message message={"Yiğit Arısoy."} delay={800} />
         </div>
-        <div className="text-left text-neutral-focus text-4xl font-semibold mb-6">
+        <div className="text-left text-neutral-focus text-4xl font-semibold mb-6 mt-8">
           <Message message={"I build things for computers."} delay={1200} />
         </div>
         <div className="text-left text-neutral text-xl font-semibold sm:w-96">

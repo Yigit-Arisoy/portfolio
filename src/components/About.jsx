@@ -6,7 +6,7 @@ function About() {
       className="h-fit pb-16 sm:pb-0 sm:h-[75vh] bg-bgSecond sm:pt-16"
       id="about"
     >
-      <div data-aos="fade-up-left" data-aos-duration="300">
+      <div data-aos="fade-up" data-aos-duration="300">
         <h1 className="text-primary font-bold text-4xl sm:text-5xl text-center pt-16">
           Who I Am
         </h1>
