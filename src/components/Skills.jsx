@@ -23,6 +23,12 @@ function Skills() {
               <Skill name={"react"} title={"React"}></Skill>{" "}
             </div>
             <div>
+              <Skill name={"express"} title={"Express.js"}></Skill>{" "}
+            </div>
+            <div>
+              <Skill name={"nodejs"} title={"Node.js"}></Skill>{" "}
+            </div>
+            <div>
               <Skill name={"webpack"} title={"Webpack"}></Skill>{" "}
             </div>
             <div>
