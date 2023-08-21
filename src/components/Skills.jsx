@@ -4,9 +4,9 @@ import Skill from "./Skill";
 function Skills() {
   return (
     <div id="skills">
-      <div>
-        <h1 className="text-5xl text-primary font-bold pt-24">Skills</h1>
-        <div className="sm:h-fit pb-16 sm:pb-64 bg-base-100 sm:mx-16 md:mx-16 lg:mx-32 xl:mx-96 mt-16">
+      <div className="pt-24 bg-bgMain">
+        <h1 className="text-5xl text-primary font-bold">Skills</h1>
+        <div className="sm:h-fit pb-16 sm:pb-32 bg-base-100 sm:mx-16 md:mx-16 lg:mx-32 xl:mx-96 pt-16">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-y-8">
             {/*  */}
             <div>
@@ -29,6 +29,12 @@ function Skills() {
               <Skill name={"nodejs"} title={"Node.js"}></Skill>{" "}
             </div>
             <div>
+              <Skill name={"electron"} title={"Electron.js"}></Skill>{" "}
+            </div>
+            <div>
+              <Skill name={"mongodb"} title={"MongoDb"}></Skill>{" "}
+            </div>
+            <div>
               <Skill name={"webpack"} title={"Webpack"}></Skill>{" "}
             </div>
             <div>
@@ -42,12 +48,15 @@ function Skills() {
                     src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
                     class="w-8 sm:w-12"
                   ></img>
-                  <p className="ml-1 sm:ml-4">Tailwind Css</p>
+                  <p className="ml-1 sm:ml-4">Tailwind</p>
                 </div>{" "}
               </div>
             </div>
             <div>
               <Skill name={"jquery"} title={"jQuery"}></Skill>{" "}
+            </div>
+            <div>
+              <Skill name={"linux"} title={"Linux"}></Skill>{" "}
             </div>
             <div>
               <Skill name={"cplusplus"} title={"C++"}></Skill>{" "}

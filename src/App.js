@@ -7,28 +7,41 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Socials from "./components/Socials";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <Navbar />
-      </div>
-      <div className="lg:mx-96">
+      <Navbar />
+
+      <div className="sticky inset-0 z-0 h-screen">
         <Introduction />
       </div>
 
-      <About />
+      <div className="relative z-10">
+        <About />
+      </div>
 
-      <Skills id="skills" />
-
-      <Projects id="projects" />
+      <div className="relative z-10">
+        <Skills id="skills" />
+      </div>
+      <div className="relative z-10">
+        <Projects id="projects" />
+      </div>
 
       <div className="fixed bottom-16 left-8 z-20">
         <Socials />
       </div>
 
-      <p className="text-primary">Yiğit Arısoy &copy; 2022</p>
+      <div id="contact" className="bg-bgMain relative z-10">
+        Contact
+      </div>
+
+      <div className="relative z-20">
+        <p className="text-primary bg-bgMain pt-16 mb-2 ">
+          Yiğit Arısoy &copy; {new Date().getFullYear()}
+        </p>
+      </div>
     </div>
   );
 }
