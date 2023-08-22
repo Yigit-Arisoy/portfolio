@@ -8,6 +8,8 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Socials from "./components/Socials";
 import Contact from "./components/Contact";
+import ContactStuff from "./components/ContactStuff";
+
 import { useEffect } from "react";
 
 function App() {
@@ -62,6 +64,10 @@ function App() {
 
       <div className="fixed bottom-16 left-8 z-20">
         <Socials />
+      </div>
+
+      <div className="relative z-10 mainElement bg-bgMain">
+        <ContactStuff />
       </div>
 
       <div id="contact" className="bg-bgMain relative z-10 mainElement">

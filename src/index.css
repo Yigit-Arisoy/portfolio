@@ -63,3 +63,11 @@ a:hover::after {
   position: absolute;
   top: 0;
 }
+
+/* canvas {
+  display: block; 
+} */
+
+canvas {
+  mask-image: radial-gradient(circle at center center, #000, transparent 75%);
+}
