@@ -4,9 +4,11 @@ import Skill from "./Skill";
 function Skills() {
   return (
     <div id="skills">
-      <div className="pt-24 bg-bgMain">
-        <h1 className="text-5xl text-primary font-bold">Skills</h1>
-        <div className="sm:h-fit pb-16 sm:pb-32 bg-base-100 sm:mx-16 md:mx-16 lg:mx-32 xl:mx-96 pt-16">
+      <div className="bg-bgMain">
+        <h1 className="text-5xl text-primary font-bold pt-8 sm:pt-16">
+          Skills
+        </h1>
+        <div className="min-h-screen pb-16 sm:pb-32 pt-16 sm:pt-32 bg-base-100 sm:mx-16 md:mx-16 lg:mx-32 xl:mx-96 ">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-y-8">
             {/*  */}
             <div>
